@@ -30,7 +30,7 @@
     "@github/prettier-config": "^0.0.4",
     "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
-    "eslint": "^7.5.0",
+    "eslint": "^7.32.0",
     "eslint-plugin-github": "^4.1.1",
     "karma": "^5.1.1",
     "karma-chai": "^0.1.0",
