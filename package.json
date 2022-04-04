@@ -23,7 +23,9 @@
     "clean": "tsc --build --clean",
     "lint": "eslint . --ignore-path .gitignore",
     "pretest": "npm run build",
-    "test": "npm run lint && karma start test/karma.config.cjs"
+    "test": "npm run lint && karma start test/karma.config.cjs",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "prettier": "@github/prettier-config",
   "devDependencies": {
@@ -41,5 +43,9 @@
     "karma-safarinative-launcher": "^1.1.0",
     "mocha": "^8.0.1",
     "typescript": "^3.9.7"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
